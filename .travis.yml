@@ -5,8 +5,8 @@ install: true
 jobs:
   include:
     - os: linux
-      dist: trusty
-      jdk: oraclejdk8
+      dist: bionic
+      jdk: openjdk11
 
 before_install:
   - ./start-broker.sh
@@ -15,4 +15,3 @@ script:
   - mvn -B clean -q
   - mvn -B --projects org.eclipse.paho.client.mqttv3,org.eclipse.paho.client.mqttv3.test test -q
   - mvn -B --projects org.eclipse.paho.mqttv5.client,org.eclipse.paho.mqttv5.client.test test -q
-
