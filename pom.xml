@@ -129,6 +129,7 @@
                     <configuration>
                         <javadocExecutable>/usr/bin/javadoc</javadocExecutable>
                         <source>11</source>
+                        <doclint>none</doclint>
                     </configuration>
                 </plugin>
                 <plugin>
